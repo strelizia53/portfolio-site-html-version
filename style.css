@@ -55,16 +55,29 @@ nav a:hover {
   transform: skew(-20deg);
   scale: 1.1;
 }
+/* to signal active tab in the navbar */
+.active {
+  background-color: var(--teal);
+  color: var(--black);
+  scale: 1.1;
+}
+
 /* home page codes */
 .homeWrapper {
   height: 95%;
   display: flex;
 }
-.homeAbout,
-.homeSocials,
-.homeProjects {
-  border: 1px solid red;
+.section {
+  border: 1px solid var(--black);
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
+  background-color: var(--teal);
+}
+/* project tab codes */
+.section img {
+  width: 100%;
 }
